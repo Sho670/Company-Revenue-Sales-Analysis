@@ -117,7 +117,6 @@ Example MongoDB document:
 ---
 
 
-
 # Features of the Project
 
 ## Revenue Analysis
