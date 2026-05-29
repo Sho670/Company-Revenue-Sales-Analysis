@@ -116,6 +116,100 @@ Example MongoDB document:
 
 ---
 
+# Project Workflow
+
+```text
++----------------------+
+|   Sales Dataset      |
+| (CSV / Excel / JSON) |
++----------+-----------+
+           |
+           v
++----------------------+
+| Data Cleaning &      |
+| Preprocessing        |
++----------+-----------+
+           |
+           v
++----------------------+
+| MongoDB Database     |
+|  companyDB           |
+|  sales collection    |
++----------+-----------+
+           |
+           v
++----------------------+
+| MongoDB Aggregation  |
+| Queries & Analysis   |
++----------+-----------+
+           |
+           v
++----------------------+
+| Python Integration   |
+| (PyMongo + Pandas)   |
++----------+-----------+
+           |
+           v
++----------------------+
+| Data Visualization   |
+| (Matplotlib/Seaborn) |
++----------+-----------+
+           |
+           v
++----------------------+
+| Business Insights &  |
+| Final Reports        |
++----------------------+
+```
+
+---
+
+# Project Architecture
+
+```text
+                     +----------------------+
+                     |   User / Analyst     |
+                     +----------+-----------+
+                                |
+                                v
+                     +----------------------+
+                     |  Python Application  |
+                     |  (Analysis Scripts)  |
+                     +----------+-----------+
+                                |
+                +---------------+---------------+
+                |                               |
+                v                               v
+     +----------------------+       +----------------------+
+     |      MongoDB         |       |  Visualization Tools |
+     |      companyDB       |       | Matplotlib/Seaborn   |
+     |  sales collection    |       +----------------------+
+     +----------+-----------+
+                |
+                v
+     +----------------------+
+     |   Sales Dataset      |
+     | CSV / Excel / JSON   |
+     +----------------------+
+```
+
+---
+
+
+# Simple Workflow Explanation
+
+1. The sales dataset is collected in CSV, Excel, or JSON format.
+2. Data cleaning and preprocessing are performed to remove errors and missing values.
+3. Cleaned data is imported into MongoDB collections.
+4. MongoDB aggregation pipelines are used for querying and analysis.
+5. Python connects to MongoDB using PyMongo.
+6. Pandas processes and analyzes the retrieved data.
+7. Visualization libraries generate charts and reports.
+8. Final business insights are obtained from the analysis.
+
+
+---
+
 
 # Features of the Project
 
