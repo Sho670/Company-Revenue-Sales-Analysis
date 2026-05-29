@@ -154,7 +154,7 @@ Example MongoDB document:
            v
 +----------------------+
 | Data Visualization   |
-| (Matplotlib/Seaborn) |
+| (Microsoft Power BI) |
 +----------+-----------+
            |
            v
