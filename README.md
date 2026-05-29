@@ -1,5 +1,15 @@
-# Company-Revenue-Sales-Analysis
 
+
+# <p align="center" style="font-size: 55px;"> <b> </b>**Company-Revenue-Sales-Analysis**</p>
+
+<p align="center">
+  <b>Insights about Company Sales with Visualizations</b><br>
+   <i> 🚀🚀🚀 </i>     
+</p>
+
+---
+
+---
 
 
 ## Project Overview
