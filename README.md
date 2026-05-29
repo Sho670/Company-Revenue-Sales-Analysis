@@ -35,3 +35,84 @@ The major objectives of this project are:
 | Jupyter Notebook | Development environment |
 
 ---
+
+
+
+# Dataset Description
+
+The dataset used in this project contains company sales transaction records. Each record represents an individual sales order and includes detailed information related to customers, products, pricing, and revenue generation.
+
+## Dataset Fields
+
+| Field Name | Description |
+|---|---|
+| Order ID | Unique identifier for each order |
+| Order Date | Date of transaction |
+| Customer Name | Name of customer |
+| Product Category | Category of product |
+| Product Name | Product purchased |
+| Quantity Sold | Number of units sold |
+| Unit Price | Price per unit |
+| Revenue | Total revenue generated |
+| Cost | Product cost |
+| Profit | Revenue minus cost |
+| Region | Sales region/location |
+| Salesperson | Employee responsible for sale |
+
+---
+
+
+# System Workflow
+
+The project follows the below workflow:
+
+```text
+Dataset Collection
+        ↓
+Data Cleaning & Preprocessing
+        ↓
+Import Data into MongoDB
+        ↓
+MongoDB Aggregation Queries
+        ↓
+Python-Based Analysis
+        ↓
+Data Visualization
+        ↓
+Business Insights & Reporting
+```
+
+---
+
+# MongoDB Database Structure
+
+The project uses a MongoDB database named:
+
+```bash
+companyDB
+```
+
+Main collection:
+
+```bash
+sales
+```
+
+Example MongoDB document:
+
+```json
+{
+  "order_id": 101,
+  "date": "2025-01-15",
+  "customer": "ABC Pvt Ltd",
+  "region": "South",
+  "product": "Laptop",
+  "quantity": 5,
+  "unit_price": 50000,
+  "revenue": 250000,
+  "profit": 40000
+}
+```
+
+---
+
