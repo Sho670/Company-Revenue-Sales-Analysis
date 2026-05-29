@@ -29,7 +29,7 @@ The major objectives of this project are:
 - Analyze revenue, profit, and sales performance.
 - Generate business insights using MongoDB aggregation.
 - Visualize trends and key performance indicators (KPIs).
-- Integrate MongoDB with Python for advanced analysis.
+- Integrate MongoDB for advanced analysis.
 
 ---
 
@@ -38,10 +38,8 @@ The major objectives of this project are:
 | Technology | Purpose |
 |---|---|
 | MongoDB | NoSQL database storage |
-| Python | Data analysis and scripting |
 | PyMongo | MongoDB-Python connectivity |
-| Pandas | Data manipulation |
-| Matplotlib / Seaborn | Data visualization |
+| Microsoft Power BI | Visualization |
 | Jupyter Notebook | Development environment |
 
 ---
@@ -58,16 +56,18 @@ The dataset used in this project contains company sales transaction records. Eac
 |---|---|
 | Order ID | Unique identifier for each order |
 | Order Date | Date of transaction |
-| Customer Name | Name of customer |
+| Customer Age | Age of customer |
+| Customer Gender | Gender of customer |
 | Product Category | Category of product |
 | Product Name | Product purchased |
 | Quantity Sold | Number of units sold |
 | Unit Price | Price per unit |
+| Unit Cost | Cost per unit |
 | Revenue | Total revenue generated |
 | Cost | Product cost |
-| Profit | Revenue minus cost |
-| Region | Sales region/location |
-| Salesperson | Employee responsible for sale |
+| Product Sub Category | Sub Category of product |
+| Region / State | Sales region/location |
+
 
 ---
 
@@ -84,8 +84,6 @@ Data Cleaning & Preprocessing
 Import Data into MongoDB
         ↓
 MongoDB Aggregation Queries
-        ↓
-Python-Based Analysis
         ↓
 Data Visualization
         ↓
@@ -155,12 +153,6 @@ Example MongoDB document:
            |
            v
 +----------------------+
-| Python Integration   |
-| (PyMongo + Pandas)   |
-+----------+-----------+
-           |
-           v
-+----------------------+
 | Data Visualization   |
 | (Matplotlib/Seaborn) |
 +----------+-----------+
@@ -183,7 +175,7 @@ Example MongoDB document:
                                 |
                                 v
                      +----------------------+
-                     |  Python Application  |
+                     |MongoDB Compass App.  |
                      |  (Analysis Scripts)  |
                      +----------+-----------+
                                 |
@@ -192,7 +184,7 @@ Example MongoDB document:
                 v                               v
      +----------------------+       +----------------------+
      |      MongoDB         |       |  Visualization Tools |
-     |      companyDB       |       | Matplotlib/Seaborn   |
+     |      companyDB       |       |   Microsoft Power BI |
      |  sales collection    |       +----------------------+
      +----------+-----------+
                 |
@@ -212,10 +204,9 @@ Example MongoDB document:
 2. Data cleaning and preprocessing are performed to remove errors and missing values.
 3. Cleaned data is imported into MongoDB collections.
 4. MongoDB aggregation pipelines are used for querying and analysis.
-5. Python connects to MongoDB using PyMongo.
-6. Pandas processes and analyzes the retrieved data.
-7. Visualization libraries generate charts and reports.
-8. Final business insights are obtained from the analysis.
+5. Pandas processes and analyzes the retrieved data.
+6. Visualization libraries generate charts and reports.
+7. Final business insights are obtained from the analysis.
 
 
 ---
@@ -271,6 +262,8 @@ db.sales.aggregate([
 ---
 
 # Data Visualization
+
+Tool: Microsoft Power BI
 
 The project generates graphical reports for easier business interpretation.
 
@@ -340,7 +333,7 @@ The project can be further enhanced by adding:
 
 # Conclusion
 
-The **Sales & Revenue Data Analysis Using MongoDB** project demonstrates how NoSQL databases can be effectively used for business intelligence and analytics. By combining MongoDB aggregation capabilities with Python-based data analysis and visualization tools, the project delivers meaningful insights from raw sales data.
+The **Sales & Revenue Data Analysis Using MongoDB** project demonstrates how NoSQL databases can be effectively used for business intelligence and analytics. By combining MongoDB aggregation capabilities with data analysis and visualization tools, the project delivers meaningful insights from raw sales data.
 
 This project helps organizations improve strategic planning, monitor revenue performance, and optimize sales operations through data-driven decision-making.
 
@@ -349,13 +342,10 @@ This project helps organizations improve strategic planning, monitor revenue per
 
 # Final Note
 
-This project demonstrates the power of combining **MongoDB** with **data analytics techniques** to transform raw business data into meaningful insights. By analyzing sales, revenue, customer behavior, and product performance, organizations can make smarter and more strategic business decisions.
+This project demonstrates the power of combining **MongoDB** with **data analytics techniques** to transform raw business data into meaningful insights. 
+By analyzing sales, revenue, customer behavior, and product performance, organizations can make smarter and more strategic business decisions.
 
-The implementation of this system not only improves technical knowledge in **NoSQL databases** and **Python-based analytics**, but also provides practical exposure to real-world business intelligence solutions.
-
-We hope this project serves as a strong foundation for learning advanced data analysis, visualization, and database management concepts. Future improvements such as machine learning integration and real-time dashboards can further enhance the system capabilities.
 
 ✨ Thank you for exploring this project!  
-📊 Turning data into valuable business insights.  
-🚀 Keep learning, keep building, and keep innovating!  
-💻 Happy Coding with MongoDB & Data Analytics!  
+📊 Turning data into valuable business insights.   
+💻 Coding with MongoDB & Data Analytics!  
